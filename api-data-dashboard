@@ -1,0 +1,29 @@
+Tech Stack: JavaScript, REST APIs, Async/Await, HTML, CSS
+
+## Overview
+This project is a dynamic front-end dashboard that fetches and displays data from a third-party REST API. It focuses on asynchronous data handling, UI state management, and clean rendering logic.
+
+## Key Features
+- Fetches live data using `fetch` and `async/await`
+- Implements loading, success, and error UI states
+- Dynamically renders data-driven UI components
+- Responsive layout for different screen sizes
+
+## Technical Highlights
+- Structured async workflows to prevent UI blocking
+- Defensive error handling for failed API requests
+- Modular rendering logic for maintainability
+
+## Skills Demonstrated
+- API consumption and asynchronous JavaScript
+- Front-end state management
+- Debugging and error handling
+- UI logic and data-driven rendering
+
+## How to Run
+1. Clone the repository
+2. Open `index.html` in your browser  
+*(or run via Live Server if applicable)*
+
+
+This project demonstrates real-world API integration and front-end problem solving.
