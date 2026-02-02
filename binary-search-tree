@@ -1,0 +1,30 @@
+# Binary Search Tree (BST) Implementation
+
+Tech Stack: JavaScript, Algorithms, Data Structures
+
+## Overview
+This project implements a complete Binary Search Tree from scratch using JavaScript. It focuses on algorithmic thinking, recursion, iteration, and time complexity analysis.
+
+## Key Features
+- Insert, search, and delete operations
+- Recursive and iterative implementations
+- Depth-first traversals (in-order, pre-order, post-order)
+- Breadth-first traversal (BFS)
+
+## Technical Highlights
+- Balance checking logic for tree validation
+- Second-highest value retrieval
+- Iterative in-order traversal using a stack
+- Big-O time and space complexity awareness
+
+## Skills Demonstrated
+- Algorithms and data structures
+- Recursion vs iteration tradeoffs
+- Performance optimization
+- Clean, testable logic
+
+## How to Run
+1. Clone the repository
+2. Run the JavaScript file using Node:
+   ```bash
+   node bst.js
