@@ -1,0 +1,30 @@
+# Sticky Notes Application
+
+**Tech Stack:** JavaScript, Local Storage, HTML, CSS
+
+## Overview
+A browser-based sticky notes application that allows users to create, edit, customize, and persist notes using Local Storage.
+
+## Key Features
+- Create, edit, and delete notes
+- Persistent data storage across sessions
+- Color and theme customization
+- Real-time UI synchronization
+
+## Technical Highlights
+- Local Storage JSON serialization
+- UI-state and data consistency handling
+- Event propagation and DOM updates
+
+## Skills Demonstrated
+- Front-end state management
+- Browser storage APIs
+- Debugging UI synchronization
+- User-focused feature design
+
+## How to Run
+1. Clone the repository
+2. Open `index.html` in your browser
+
+---
+Demonstrates practical front-end persistence and state synchronization.
