@@ -1,0 +1,30 @@
+# Dynamic Box UI Application
+
+**Tech Stack:** JavaScript, DOM Manipulation, HTML, CSS
+
+## Overview
+An interactive UI application that allows users to dynamically create, modify, style, and remove visual components on the page using vanilla JavaScript.
+
+## Key Features
+- Dynamic creation and removal of DOM elements
+- Real-time style updates and rendering
+- Event handling for clicks, hovers, keyboard, and mouse input
+- Scalable UI logic using state variables
+
+## Technical Highlights
+- Event delegation for performance and scalability
+- Modular helper functions for rendering and updates
+- Clear separation of state and UI logic
+
+## Skills Demonstrated
+- DOM traversal and manipulation
+- State management patterns
+- Event-driven programming
+- Component-style architecture without frameworks
+
+## How to Run
+1. Clone the repository
+2. Open `index.html` in your browser
+
+---
+Demonstrates mastery of vanilla JavaScript and UI architecture fundamentals.
