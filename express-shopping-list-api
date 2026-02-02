@@ -1,0 +1,29 @@
+# Express Shopping List API
+
+**Tech Stack:** Node.js, Express, Jest, Supertest
+
+## Overview
+A RESTful JSON API that manages a shopping list, built with Node.js and Express. The project emphasizes clean routing, middleware usage, and test-driven development.
+
+## Key Features
+- Full CRUD functionality (GET, POST, PATCH, DELETE)
+- Express Router-based architecture
+- Centralized error handling middleware
+- In-memory data store simulating persistence
+
+## Technical Highlights
+- Comprehensive Jest + Supertest test coverage
+- API validation through automated and manual testing
+- Clean request/response lifecycle handling
+
+## Skills Demonstrated
+- Backend API design
+- RESTful architecture
+- Automated testing
+- Express middleware and routing
+
+## How to Run
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
