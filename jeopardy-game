@@ -1,0 +1,31 @@
+# Jeopardy Game Application
+
+**Tech Stack:** JavaScript, jQuery, Axios, REST APIs
+
+## Overview
+An interactive Jeopardy-style game that fetches real-time trivia data from an external API and dynamically renders a playable game board.
+
+## Key Features
+- Asynchronous API calls for categories and clues
+- Dynamic game board rendering
+- Interactive question/answer flow
+- Loading and error state handling
+
+## Technical Highlights
+- Async/await with Axios
+- DOM manipulation using jQuery
+- State-driven UI updates
+- Defensive handling of API failures
+
+## Skills Demonstrated
+- Front-end API integration
+- UI logic and state transitions
+- Debugging async behavior
+- Interactive application design
+
+## How to Run
+1. Clone the repository
+2. Open `index.html` in your browser
+
+---
+Demonstrates real-time data handling and interactive UI development.
