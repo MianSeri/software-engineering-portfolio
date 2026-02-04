@@ -1,0 +1,46 @@
+# AlmsGiving Lite — Full-Stack Capstone Project
+
+**Tech Stack:** JavaScript, React, Node.js, Express, MongoDB, Stripe API
+
+## Overview
+AlmsGiving Lite is a full-stack donation platform designed to help nonprofit organizations create campaigns, accept donations, and track contributions securely. This project serves as my software engineering capstone and demonstrates end-to-end system design, backend transactions, and third-party payment integration.
+
+## Key Features
+- Nonprofit registration and authentication
+- Campaign creation and management
+- Secure donation processing using Stripe PaymentIntents
+- Idempotent payment handling to prevent duplicate charges
+- Real-time campaign donation tracking
+- RESTful API architecture with modular routing
+
+## Technical Highlights
+- Implemented atomic donation confirmation using MongoDB transactions
+- Designed idempotency key handling for safe payment retries
+- Built protected routes with authentication middleware
+- Modeled relational data with Mongoose schemas
+- Integrated Stripe webhooks for payment lifecycle handling
+
+## Architecture
+- **Frontend:** React with controlled forms and API-driven state
+- **Backend:** Node.js + Express REST API
+- **Database:** MongoDB Atlas with transactional operations
+- **Payments:** Stripe PaymentIntents API
+
+## Skills Demonstrated
+- Full-stack system design
+- REST API development
+- Secure payment processing
+- Database transactions and data consistency
+- Error handling and production-minded backend logic
+
+## How to Run Locally
+1. Clone the repository
+2. Install dependencies for both client and server
+3. Set environment variables:
+   - `STRIPE_SECRET_KEY`
+   - `MONGODB_URI`
+4. Start backend and frontend servers
+5. Access the app locally in the browser
+
+---
+This capstone demonstrates production-ready engineering patterns and real-world payment workflows.
