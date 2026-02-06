@@ -1,0 +1,52 @@
+/* src/App.module.css */
+.app {
+    min-height: 100vh;
+    padding: 28px 18px 60px;
+  }
+  
+  .shell {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: linear-gradient(180deg, var(--panel), transparent);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 14px;
+    z-index: 10;
+    backdrop-filter: blur(10px);
+  }
+  
+  .link {
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    color: var(--muted);
+    transition: transform 0.12s ease, background 0.12s ease, border-color 0.12s ease;
+  }
+  
+  .link:hover {
+    background: var(--panel2);
+    border-color: var(--border);
+    transform: translateY(-1px);
+    color: var(--text);
+  }
+  
+  .active {
+    background: linear-gradient(180deg, rgba(125,211,252,0.16), rgba(255,255,255,0.05));
+    border-color: rgba(125,211,252,0.35);
+    color: var(--text);
+  }
+  
+  .main {
+    margin-top: 18px;
+  }
+  

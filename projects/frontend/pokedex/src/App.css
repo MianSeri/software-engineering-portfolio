@@ -1,0 +1,198 @@
+/* App.css */
+
+.App {
+  min-height: 100vh;
+  padding: 2rem 1rem 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ---------- Pokegame ---------- */
+
+.Pokegame {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.Pokegame h1 {
+  font-size: 2.2rem;
+  margin: 0 0 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+}
+
+.Pokegame-hands {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+/* ---------- Pokedex (each hand) ---------- */
+
+.Pokedex {
+  flex: 1 1 320px;
+  background: #020617;
+  border-radius: 18px;
+  border: 1px solid #1f2937;
+  padding: 1.25rem 1.2rem 1.5rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.Pokedex + .Pokedex {
+  /* small visual separation between hands on narrow screens */
+}
+
+.Pokedex h1 {
+  display: none; /* hide inner "Pokedex" title; main heading is Pokegame */
+}
+
+.Pokedex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1.75rem;
+}
+
+.Pokedex-title {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #9ca3af;
+}
+
+.Pokedex-exp {
+  font-size: 0.9rem;
+  color: #9ca3af;
+  margin: 0;
+}
+
+/* winner / loser look */
+
+.Pokedex-winner {
+  border-color: #22c55e;
+  box-shadow: 0 18px 45px rgba(34, 197, 94, 0.3);
+}
+
+.Pokedex-result {
+  margin: 0.4rem 0 1.25rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #6b7280;
+}
+
+.Pokedex-result--winner {
+  color: #22c55e;
+}
+
+/* cards grid */
+
+.Pokedex-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* ---------- Pokecard ---------- */
+
+.Pokecard {
+  background: #0b1120;
+  border-radius: 16px;
+  width: 170px;
+  padding: 0.9rem 0.75rem 0.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #1f2937;
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.Pokecard-title {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+.Pokecard img {
+  width: 96px;
+  height: 96px;
+  image-rendering: pixelated;
+  margin-bottom: 0.4rem;
+}
+
+.Pokecard p {
+  margin: 0.08rem 0;
+  font-size: 0.85rem;
+  color: #9ca3af;
+}
+
+.Pokecard p:first-of-type {
+  text-transform: capitalize;
+}
+
+.Pokecard:hover {
+  transform: translateY(-4px);
+  border-color: #3b82f6;
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.35);
+}
+
+/* ---------- Blackjack ---------- */
+
+.Blackjack {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background: #020617;
+  border-radius: 18px;
+  border: 1px solid #1f2937;
+  padding: 2rem 1.5rem 2.5rem;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.Blackjack-title {
+  font-size: 2.2rem;
+  margin: 0 0 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.Blackjack-subtitle {
+  margin: 0 0 1.5rem;
+  font-size: 0.95rem;
+  color: #9ca3af;
+}
+
+.Blackjack-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.Blackjack-card img {
+  width: 140px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.Blackjack-total {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.Blackjack-message {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #22c55e;
+}

@@ -1,0 +1,142 @@
+.page {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 26px 20px 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  /* HERO */
+  .hero {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.07), rgba(255,255,255,0.02));
+    box-shadow: var(--shadow);
+    overflow: hidden;
+  }
+  
+  .heroInner {
+    padding: 22px 22px 20px;
+  }
+  
+  .heroTitle {
+    margin: 0 0 10px;
+    font-size: 54px;
+    line-height: 1.05;
+    letter-spacing: -0.6px;
+  }
+  
+  .heroSubtitle {
+    margin: 0 0 16px;
+    max-width: 70ch;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.88);
+    font-size: 18px;
+  }
+  
+  .ctaRow {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  
+  .primary,
+  .secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.16);
+    text-decoration: none;
+    transition: transform 0.12s ease, border-color 0.12s ease;
+  }
+  
+  .primary {
+    border-color: rgba(125,211,252,0.35);
+    background: linear-gradient(180deg, rgba(125,211,252,0.16), rgba(255,255,255,0.03));
+    color: var(--text);
+  }
+  
+  .secondary {
+    background: rgba(255,255,255,0.06);
+    color: var(--text);
+  }
+  
+  .primary:hover,
+  .secondary:hover {
+    transform: translateY(-1px);
+    border-color: rgba(125,211,252,0.55);
+  }
+  
+  /* GRID */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+  }
+  
+  /* CARDS */
+  .card {
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    box-shadow: var(--shadow);
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 220px;
+  }
+  
+  .cardTitle {
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 0.2px;
+  }
+  
+  .cardText {
+    margin: 0;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.86);
+  }
+  
+  /* Fix your spacing problem: remove weird list indent */
+  .featureList {
+    margin: 4px 0 6px;
+    padding-left: 18px;
+    display: grid;
+    gap: 6px;
+    color: rgba(255,255,255,0.82);
+  }
+  
+  .cardLink {
+    margin-top: auto;
+    color: rgba(125,211,252,0.95);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .cardLink:hover {
+    text-decoration: underline;
+  }
+  
+  .tip {
+    margin: 10px 0 0;
+    color: rgba(255,255,255,0.72);
+    font-style: italic;
+    line-height: 1.55;
+  }
+  
+  @media (max-width: 900px) {
+    .heroTitle {
+      font-size: 40px;
+    }
+  
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

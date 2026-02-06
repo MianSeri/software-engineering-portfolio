@@ -1,0 +1,13 @@
+
+:root {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      sans-serif;
+    color-scheme: dark;
+  }
+  
+  body {
+    margin: 0;
+    background: radial-gradient(circle at top, #07132d 0, #020415 45%, #03010a 100%);
+    color: #f5f7ff;
+  }
+  

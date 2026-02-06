@@ -1,0 +1,118 @@
+.page {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 28px 20px 40px;
+  }
+  
+  .topRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  
+  .backBtn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(125,211,252,0.25);
+    background: rgba(255,255,255,0.04);
+    color: var(--text);
+    cursor: pointer;
+  }
+  
+  .backBtn:hover {
+    border-color: rgba(125,211,252,0.45);
+  }
+  
+  .card {
+    border: 1px solid var(--border);
+    background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+    border-radius: 18px;
+    padding: 18px;
+    box-shadow: var(--shadow);
+  }
+  
+  .title {
+    margin: 0 0 6px;
+    font-size: 28px;
+    letter-spacing: 0.2px;
+  }
+  
+  .subtitle {
+    margin: 0 0 16px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+  
+  .form {
+    display: grid;
+    gap: 14px;
+    max-width: 760px;
+  }
+  
+  .field label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: rgba(255,255,255,0.9);
+  }
+  
+  .input,
+  .textarea {
+    width: 100%;
+    padding: 12px 12px;
+    border-radius: 14px;
+    border: 1px solid rgba(255,255,255,0.16);
+    background: rgba(0,0,0,0.25);
+    color: var(--text);
+    outline: none;
+  }
+  
+  .textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+  
+  .input:focus,
+  .textarea:focus {
+    border-color: rgba(125,211,252,0.6);
+    box-shadow: 0 0 0 3px rgba(125,211,252,0.15);
+  }
+  
+  .error {
+    margin: 6px 0 0;
+    color: rgb(251, 113, 133);
+    font-size: 13px;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-top: 6px;
+  }
+  
+  .primaryBtn {
+    padding: 12px 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(125,211,252,0.35);
+    background: linear-gradient(180deg, rgba(125,211,252,0.16), rgba(255,255,255,0.03));
+    color: var(--text);
+    cursor: pointer;
+  }
+  
+  .primaryBtn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+  
+  .hint {
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  

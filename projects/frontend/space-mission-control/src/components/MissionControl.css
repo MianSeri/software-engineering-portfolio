@@ -1,0 +1,58 @@
+.mission-control {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1.5rem 2rem 3rem;
+    border-radius: 18px;
+    background: rgba(3, 6, 26, 0.9);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(104, 150, 255, 0.3);
+    backdrop-filter: blur(8px);
+    animation: mc-fade-in 0.5s ease-out;
+  }
+  
+  .mission-control__title {
+    margin-top: 0;
+    margin-bottom: 1.2rem;
+    font-size: 2.4rem;
+    letter-spacing: 0.06em;
+  }
+  
+  .mission-control__list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .mission-control__item {
+    border-radius: 16px;
+    background: rgba(8, 14, 40, 0.95);
+    border: 1px solid rgba(92, 132, 255, 0.3);
+    padding: 1.1rem 1.4rem;
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.6);
+    animation: mc-item-up 0.35s ease forwards;
+    opacity: 0;
+  }
+  
+  /* animations */
+  @keyframes mc-fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes mc-item-up {
+    from {
+      opacity: 0;
+      transform: translateY(10px) scale(0.99);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+  

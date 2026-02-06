@@ -1,0 +1,75 @@
+/* ====== Global styles ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* hides scrollbars */
+}
+
+.space {
+  position: fixed; /* stays locked to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  /* Deep space gradient – nebula style */
+  background: linear-gradient(
+    135deg,
+    #0d0d2b 0%,   /* deep blue */
+    #150531 40%,  /* purple nebula */
+    #000000 100%  /* pure black fade */
+  );
+}
+
+/* Subtle starfield overlay */
+.space::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+
+  background-image: url("https://www.transparenttextures.com/patterns/stardust.png");
+  opacity: 0.2; /* subtle is better */
+}
+
+/* ====== Star styles ====== */
+
+.star {
+  animation: twinkle 2s infinite;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  outline: none;
+  transition: transform 0.15s ease;
+}
+
+.star:focus {
+  outline: none;
+  transform: scale(1.15);
+}
+
+
+.star:hover {
+  transform: scale(1.1); /* Enlarge the star when hovered */
+}
+
+.star:active {
+  transform: scale(0.9); /* Shrink a bit when clicked */
+  animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { opacity: 0.8; }
+}

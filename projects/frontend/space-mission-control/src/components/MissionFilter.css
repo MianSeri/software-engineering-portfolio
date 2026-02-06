@@ -1,0 +1,72 @@
+.mission-filter {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    animation: mf-fade-down 0.4s ease-out;
+  }
+  
+  .mission-filter__button {
+    border-radius: 999px;
+    padding: 0.25rem 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  
+    border: 1px solid rgba(180, 195, 255, 0.35);
+    background: rgba(15, 19, 44, 0.8);
+    color: #dfe6ff;
+  
+    cursor: pointer;
+    transition:
+      transform 0.12s ease,
+      box-shadow 0.12s ease,
+      background 0.12s ease,
+      border-color 0.12s ease,
+      color 0.12s ease;
+  }
+  
+  .mission-filter__button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(105, 139, 255, 0.4);
+  }
+  
+  /* ALL - neutral */
+  .mission-filter__button--all {
+    background: rgba(101, 114, 189, 0.584);
+  }
+  
+  /* Planned – blue */
+  .mission-filter__button--planned {
+    background: rgba(111, 143, 255, 0.18);
+    color: #c3d5ff;
+  }
+  
+  /* Active – green */
+  .mission-filter__button--active {
+    background: rgba(57, 196, 131, 0.2);
+    color: #a9ffd3;
+  }
+  
+  /* Completed – purple */
+  .mission-filter__button--completed {
+    background: rgba(197, 166, 255, 0.2);
+    color: #efd7ff;
+  }
+  
+  /* When selected : gentle lift + soft glow */
+  .mission-filter__button--selected {
+    border-color: transparent;
+  
+    /* For softer glow */
+    box-shadow:
+      0 3px 8px rgba(112, 148, 255, 0.25),
+      0 0 4px rgba(130, 160, 255, 0.3);
+  
+    /* Gentle lift */
+    transform: translateY(-0.5px);
+  }
+  
+
+  

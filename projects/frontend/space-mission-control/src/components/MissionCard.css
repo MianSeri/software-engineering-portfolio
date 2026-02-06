@@ -1,0 +1,52 @@
+.mission-card {
+    position: relative;
+    margin-bottom: 0.5rem; 
+    padding: 0.2rem 0 0.4rem;
+    padding-left: 1rem; /* I'm adding extra padding */
+    border-left: 3px solid rgba(115, 159, 255, 0.6);
+    transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  }
+
+
+.mission-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.mission-card__title {
+  margin: 0 0 0.35rem;
+  font-size: 1.4rem;
+}
+
+.mission-card__badge {
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* different colors per status */
+.mission-card__badge--planned {
+  background: rgba(111, 143, 255, 0.18);
+  color: #c3d5ff;
+}
+
+.mission-card__badge--active {
+  background: rgba(57, 196, 131, 0.2);
+  color: #a9ffd3;
+}
+
+.mission-card__badge--completed {
+  background: rgba(197, 166, 255, 0.2);
+  color: #efd7ff;
+}
+
+.mission-card__line {
+  margin: 0.2rem 0;
+  font-size: 0.95rem;
+  color: #c8d2ff;
+}
