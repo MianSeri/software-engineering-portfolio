@@ -1,0 +1,254 @@
+/* ========= GLOBAL RESET ========== */
+* {
+  box-sizing: border-box;
+  margin: 3;
+  padding: 0;
+}
+
+/* Gradient blue background */
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: radial-gradient(circle at top, #2693c5 0, #0c3973 40%, #050017 100%);
+  color: #f9fafb;
+}
+
+/* Centered column layout with extra vertical breathing room */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  padding: 3.5rem 1rem 4rem;
+}
+
+/* ===== HEADINGS / TEXT ======= */
+
+.app__title {
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  color: #fff7ff;
+  margin-bottom: 0.15rem;
+}
+
+.app__remaining {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 380px;
+  color: #e4d9ff;
+  margin-top: 0;
+  margin-bottom: 1.7rem; /* more space before buttons */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app__error {
+  color: #fecaca;
+  margin-top: 0.75rem;
+}
+
+/* ======= BUTTON ROW ======== */
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-bottom: 3rem; /* more space between buttons & card */
+  filter: drop-shadow(0 10px 22px rgba(0, 0, 0, 0.45));
+}
+
+/* Base button (less rounded than pills) */
+.btn {
+  padding: 0.8rem 2.2rem;
+  border-radius: 999px;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    transform 0.12s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Primary: bright magenta/purple */
+.btn--primary {
+  /* background: linear-gradient(135deg, #f94892, #b02cdb);
+  color: #fff9ff;
+  box-shadow: 0 2px 2px rgba(165, 40, 204, 0.6); */
+  background: linear-gradient(135deg, #6ed0ff 0%, #3b82f6 60%, #1d4ed8 100%);
+  /* color: #ffffff; */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.btn--primary:hover:not(:disabled) {
+  /* background: linear-gradient(135deg, #ff5fa4, #c138f0);
+  transform: translateY(-0.75px);
+  box-shadow: 0 2px 2px rgba(165, 40, 204, 0.8); */
+  
+  background: linear-gradient(135deg, #63f1e0, #2563eb);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 32px rgba(30, 64, 175, 0.8);
+}
+
+/* Secondary: dark card-back look */
+.btn--secondary {
+  background: #f9fafb;
+  color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.65);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+.btn--secondary:hover:not(:disabled) {
+  background: #ffffff;
+  transform: translateY(-1px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.35);
+}
+
+/* Disabled stays subtle */
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* ======== CARD PANEL ========= */
+
+/* Floating card panel, centered lower on the screen */
+.card-area {
+  margin-top: 2rem;
+  padding: 1.8rem 2rem 2rem;
+
+  background: rgba(15, 23, 42, 0.88); 
+  backdrop-filter: blur(6px);
+  border-radius: 22px;
+
+  /* thin glowing rim */
+  border: 2px solid rgba(255, 255, 255, 0.08);
+
+  /* improving depth */
+  box-shadow:
+    0 14px 42px rgba(0, 0, 0, 0.66),      /* deeper base shadow */
+    0 0 22px rgba(255, 255, 255, 0.03);   /* subtle bloom rim */
+}
+
+/* Card label */
+.card-area__title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #fef9ff;
+  margin-bottom: 0.9rem;
+  text-align: left;
+}
+
+/* Dark frame behind card */
+.card-area__image-wrapper {
+  padding: 0.5rem;
+  background: #030016;
+  border-radius: 24px;
+  border: 0.5px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Card image */
+.card-area__image {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 14px;
+
+  /* subtle floating shadow */
+  box-shadow:
+    0 8px 18px rgba(0, 0, 0, 0.55),
+    0 0 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Layout for previous + current card side-by-side */
+.card-area__layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.6rem;
+  margin-top: 0.6rem;
+}
+
+/* Label above each mini section ("Previous", "Current") */
+.card-area__label {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #cbd5f5;
+  margin-bottom: 0.35rem;
+  text-align: left;
+}
+
+/* Current card section keeps your existing wrapper */
+.card-area__current, 
+.card-area__previous {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Reuse your main wrapper, but smaller version */
+.card-area__image-wrapper--small {
+  padding: 0.35rem;
+  border-radius: 10px;
+}
+
+/* Smaller image for previous card */
+.card-area__image--small {
+  max-width: 90px;
+  border-radius: 8px;
+  opacity: 0.95;
+}
+
+/* Responsive: stack vertically on small screens */
+/* @media (max-width: 600px) {
+  .card-area__layout {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .card-area__previous {
+    order: 2;
+  }
+
+  .card-area__current {
+    order: 1;
+  }
+} */
+
+/* ========= Toast Notifications ======== */
+
+.toast {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  padding: 0.9rem 1.8rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+
+  animation: fadeToast 3s ease forwards;
+}
+
+@keyframes fadeToast {
+  0% { opacity: 0; transform: translate(-50%, -10px); }
+  10% { opacity: 1; transform: translate(-50%, 0px); }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, -10px); }
+}

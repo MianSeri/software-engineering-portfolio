@@ -1,0 +1,109 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+/* Lighter and softer color palette - smooth hover animations - polished table styling - readable typography (arial -safe / or copse -playful */
+
+/* Main Page Style */
+body {
+  background: #f5f7fb; /* soft gray background */
+  font-family: 'Arial', san-serif;
+  padding: 30px;
+  text-align: center;
+  color: #333;
+}
+
+/* Title */
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #5b8efc; /* soft-jeopardy blue */
+  letter-spacing: 2px;
+}
+
+/* START/RESTART Button */
+#start {
+  background-color: #6d75f5; /* soft bright blue */
+  color: white;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+#start:hover {
+  background-color: #5b8efc; /* slightly deeper soft blue */
+}
+
+#start:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* Spinner */
+#spinner {
+  margin: 15px;
+  font-size: 18px;
+  color: #6d75f5;
+}
+
+/* Jeopardy Table */
+table#jeopardy {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Table Header(CATEGORIES) */
+#jeopardy thead th {
+  padding: 15px;
+  background: #5b8efc; /* soft jeopardy blue */
+  color: white;
+  font-size: 20px;
+  border: 2px solid #ffffff22;
+}
+
+/* Question Cells */
+#jeopardy td {
+  width: 140px;
+  height: 90px;
+  border: 2px solid #ffffff;
+  background: #c48ce4; /* soft purple for clues */
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  transition: 0.3s ease;
+  padding: 10px;
+}
+
+/* Cell Hover Effect */
+#jeopardy td:hover {
+  background-color: #b06bd0; /* slightly deeper soft purple */
+}
+
+/* When cell is showing a QUESTION */
+#jeopardy td.showing-question {
+  background: #7ed957; /* soft green */
+  color: #333;
+  font-weight: bold;
+}
+
+/* When cell is showing an ANSWER */
+#jeopardy td.showing-answer {
+  background: #6d75f5; /* soft bright blue */
+  color: white;
+  font-weight: bold;
+}
