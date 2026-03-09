@@ -391,7 +391,7 @@ Potential future improvements include:
 ![Donation](./screenshots/donation.png)
 
 ### Campaign Management
-![My Campaigns](./screenshots/my-campaigns.png)
+![My Campaigns](./screenshots/mycampaigns.png)
 
 ---
 
