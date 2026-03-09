@@ -1,15 +1,21 @@
-## Alms Lite
 
-Alms Lite is a fundraising platform designed to help nonprofit organizations launch campaigns and receive online donations securely.
+## Alms Lite — Nonprofit Fundraising Platform
+
+Alms Lite is a full-stack fundraising platform that enables nonprofit organizations to create campaigns and securely accept online donations.
 
 The platform provides:
 
-- A public campaign discovery experience for donors
-- A secure dashboard for nonprofit organizations
-- Stripe-powered donation processing
-- Automated email receipts and password reset workflows
+* **Public campaign discovery** for donors to explore and support causes
+* **Secure nonprofit dashboard** to create and manage fundraising campaigns
+* **Stripe-powered donation processing** for safe and reliable payments
+* **Automated email workflows** for donation receipts and password recovery
 
-The project demonstrates a full-stack architecture using modern web technologies including **Next.js, Express, MongoDB, Stripe, and Resend**.
+This project demonstrates a modern **full-stack architecture** built with:
+
+**Next.js • React • Node.js • Express • MongoDB • Stripe • Resend**
+
+It highlights secure authentication, campaign management, payment integration, and scalable API design.
+
 
 ## Key Highlights
 
