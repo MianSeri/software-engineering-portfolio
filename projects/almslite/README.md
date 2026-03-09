@@ -370,22 +370,22 @@ Potential future improvements include:
 ## Screenshots
 
 ### Homepage
-![Homepage](https://raw.githubusercontent.com/MianSeri/software-engineering-portfolio/main/projects/almslite/screenshots/home.png)
+![Homepage](./screenshots/homepage.png)
 
 ### Campaign Discovery
-![Campaigns](https://raw.githubusercontent.com/MianSeri/software-engineering-portfolio/main/projects/almslite/screenshots/campaigns.png)
+![Campaigns](./screenshots/campaigns.png)
 
 ### Campaign Creation
-![Create Campaign](https://raw.githubusercontent.com/MianSeri/software-engineering-portfolio/main/projects/almslite/screenshots/create-campaign.png)
+![Create Campaign](./screenshots/create-campaign.png)
 
 ### Nonprofit Dashboard
-![Dashboard](https://raw.githubusercontent.com/MianSeri/software-engineering-portfolio/main/projects/almslite/screenshots/dashboard.png)
+![Dashboard](./screenshots/dashboard.png)
 
 ### Donation Flow
-![Donation](https://raw.githubusercontent.com/MianSeri/software-engineering-portfolio/main/projects/almslite/screenshots/donation.png)
+![Donation](./screenshots/donation.png)
 
 ### Campaign Management
-![My Campaigns](https://raw.githubusercontent.com/MianSeri/software-engineering-portfolio/main/projects/almslite/screenshots/mycampaign.png)
+![My Campaigns](./screenshots/my-campaigns.png)
 
 ---
 
