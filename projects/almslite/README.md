@@ -370,7 +370,7 @@ Potential future improvements include:
 ## Screenshots
 
 ### Homepage
-![Homepage](./screenshots/homepage.png)
+![Homepage](screenshots/homepage.png)
 
 ### Campaign Discovery
 ![Campaigns](./screenshots/campaigns.png)
