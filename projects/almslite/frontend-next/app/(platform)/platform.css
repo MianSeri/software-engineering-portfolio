@@ -1,0 +1,7 @@
+/* app/(platform)/platform.css */
+
+/* Optional: platform-specific background/spacing without touching public */
+.platformShell{
+    min-height: 100vh;
+    padding: 24px 0;
+  }

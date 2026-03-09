@@ -1,0 +1,113 @@
+.navWrap {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: linear-gradient(
+      180deg,
+      rgba(248, 251, 252, 0.92),
+      rgba(248, 251, 252, 0.86)
+    );
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(15, 94, 85, 0.08);
+  }
+  
+  .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* space between logo and text */
+    text-decoration: none;
+    flex-shrink: 0;
+  }
+  
+  .brandLogo {
+    height: 56px;   /* large enough to see */
+    width: auto;    /* prevents extra whitespace */
+    object-fit: contain;
+    display: block;
+  }
+  
+  .brandText {
+    font-size: 1.9rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: #1b2640;
+  }
+  
+  .links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .link {
+    text-decoration: none;
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--ink-700);
+    padding: 10px 14px;
+    border-radius: 999px;
+    border: 1px solid transparent;
+    transition: all 140ms ease;
+  }
+  
+  .link:hover {
+    color: #0f5e55;
+    background: rgba(45, 182, 163, 0.08);
+    border-color: rgba(15, 94, 85, 0.08);
+  }
+  
+  .active {
+    color: #0f5e55;
+    background: rgba(45, 182, 163, 0.12);
+    border: 1px solid rgba(15, 94, 85, 0.08);
+  }
+  
+  .logoutBtn {
+    margin-left: 6px;
+    border: 1px solid rgba(214, 40, 57, 0.14);
+    background: rgba(255, 255, 255, 0.9);
+    color: #9b1c2d;
+    font-family: var(--font-sans);
+    font-size: var(--text-sm);
+    font-weight: 600;
+    padding: 10px 14px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 140ms ease;
+  }
+  
+  .logoutBtn:hover {
+    background: rgba(214, 40, 57, 0.06);
+  }
+  
+  @media (max-width: 720px) {
+    .navbar {
+      padding: 12px 16px;
+      align-items: flex-start;
+      flex-direction: column;
+      gap: 14px;
+    }
+  
+    .brand {
+      width: 100%;
+    }
+  
+    .links {
+      width: 100%;
+      justify-content: flex-start;
+    }
+  }

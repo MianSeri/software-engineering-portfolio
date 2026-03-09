@@ -1,0 +1,40 @@
+:root{
+
+    /* BRAND PALETTE */
+  
+    --alms-berry-700:#9B1C2D;
+    --alms-coral-600:#D62839;
+    --alms-coral-500:#E04658;
+  
+    --alms-teal-700:#0F5E55;
+    --alms-teal-500:#2DB6A3;
+  
+    /* TEXT */
+  
+    --ink-900:#162033;
+    --ink-700:#425066;
+    --ink-500:#6A768B;
+  
+    /* SURFACE */
+  
+    --bg:#F7FAFA;
+    --card:#ffffff;
+  
+    --border:rgba(22,32,51,0.10);
+  
+    /* TYPOGRAPHY */
+  
+    --font-sans: var(--font-inter), system-ui, -apple-system, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif;
+  
+    --text-xl:clamp(2.4rem,4vw,3.6rem);
+    --text-lg:1.5rem;
+    --text-md:1rem;
+    --text-sm:0.9rem;
+  
+    /* BUTTON SHAPE */
+  
+    --radius-lg:16px;
+    --radius-md:12px;
+    --radius-pill:999px;
+  }
