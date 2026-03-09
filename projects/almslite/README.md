@@ -131,45 +131,52 @@ Deployment
 
 # Architecture
 
+```
 Browser (Donor / Nonprofit)
-│
-▼
+        │
+        ▼
 Next.js Frontend (React)
-│
-▼
+        │
+        ▼
 Express API (Node.js)
-│
-▼
+        │
+        ▼
 MongoDB Atlas (Database)
+```
 
 Stripe Payment Flow
-Browser -➤ Backend -➤ Stripe -➤ Webhook -➤ Database -➤ Email Receipt
+
+```
+Browser → Backend → Stripe → Webhook → Database → Email Receipt
+```
 
 ---
 
 ## Project Structure
 
+```
 almsgiving
 │
 ├── frontend-next
-│ ├── app
-│ ├── components
-│ ├── lib
-│ ├── public
-│ ├── package.json
-│ └── next.config.ts
+│   ├── app
+│   ├── components
+│   ├── lib
+│   ├── public
+│   ├── package.json
+│   └── next.config.ts
 │
 ├── backend
-│ ├── config
-│ ├── middleware
-│ ├── models
-│ ├── routes
-│ ├── utils
-│ ├── uploads
-│ ├── package.json
-│ └── server.js
+│   ├── config
+│   ├── middleware
+│   ├── models
+│   ├── routes
+│   ├── utils
+│   ├── uploads
+│   ├── package.json
+│   └── server.js
 │
 └── README.md
+```
 
 The project follows a monorepo structure separating the frontend and backend applications.
 
@@ -274,31 +281,17 @@ POST /webhooks/stripe
 
 Backend `.env`
 
-<<<<<<< HEAD
-
 ```env
-=======
->>>>>>> main
 MONGODB_URI=your_mongodb_connection
 PORT=5050
-
 JWT_SECRET=your_jwt_secret
-
-<<<<<<< HEAD
-STRIPE_SECRET_KEY=your_stripe_secret_key
-STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
-=======
 STRIPE_SECRET_KEY=<your_stripe_secret_key>
 STRIPE_WEBHOOK_SECRET=<your_stripe_webhook_secret>
->>>>>>> main
-
 CLIENT_URL=http://localhost:3000
 FRONTEND_URL=https://almslite-frontend.onrender.com
-
 RESEND_API_KEY=your_resend_key
-<<<<<<< HEAD
-FROM_EMAIL=sender_email
-RECEIPT_TEST_EMAIL=personal@gmail.com
+FROM_EMAIL=<sender_email>
+RECEIPT_TEST_EMAIL=<personal@gmail.com>
 ```
 
 Frontend `.env`
@@ -306,16 +299,6 @@ Frontend `.env`
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:5050
 ```
-
-=======
-FROM_EMAIL=<sender_email>
-RECEIPT_TEST_EMAIL=<personal@gmail.com>
-
-Frontend `.env`
-
-NEXT_PUBLIC_API_URL=http://localhost:5050
-
-> > > > > > > main
 
 ---
 
@@ -323,12 +306,7 @@ NEXT_PUBLIC_API_URL=http://localhost:5050
 
 ### 1. Clone the repository
 
-<<<<<<< HEAD
 git clone https://github.com/MianSeri/almslite.git
-=======
-git clone https://github.com/MianSeri/almsgiving.git
-
-> > > > > > > main
 
 ### 2. Install backend dependencies
 
@@ -389,46 +367,32 @@ Potential future improvements include:
 
 ---
 
-<<<<<<< HEAD
-
 ## Screenshots
 
 ### Homepage
 
-![Homepage](almslite/screenshots/home.png)
+![Homepage](https://raw.githubusercontent.com/MianSeri/software-engineering-portfolio/dev/projects/almslite/screenshots/home.png)
 
 ### Campaign Discovery
 
-![Campaigns](almslite/screenshots/campaigns.png)
+![Campaigns](https://raw.githubusercontent.com/MianSeri/software-engineering-portfolio/dev/projects/almslite/screenshots/campaigns.png)
 
 ### Campaign Creation
 
-![Create Campaign](almslite/screenshots/create-campaign.png)
+![Create Campaign](https://raw.githubusercontent.com/MianSeri/software-engineering-portfolio/dev/projects/almslite/screenshots/create-campaign.png)
 
 ### Nonprofit Dashboard
 
-![Dashboard](almslite/screenshots/dashboard.png)
+![Dashboard](https://raw.githubusercontent.com/MianSeri/software-engineering-portfolio/dev/projects/almslite/screenshots/dashboard.png)
 
 ### Donation Flow
 
-![Donation](almslite/screenshots/donation.png)
+![Donation](https://raw.githubusercontent.com/MianSeri/software-engineering-portfolio/dev/projects/almslite/screenshots/donation.png)
 
 ### Campaign Management
 
-# ![My Campaigns](almslite/screenshots/mycampaign.png)
+![My Campaigns](https://raw.githubusercontent.com/MianSeri/software-engineering-portfolio/dev/projects/almslite/screenshots/mycampaign.png)
 
-# Screenshots
-
-Add screenshots here before submission.
-
-Examples:
-
-Dashboard  
-Campaign page  
-Donation flow  
-Campaign creation page
-
-> > > > > > > main
 
 ---
 
